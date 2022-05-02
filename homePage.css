@@ -170,6 +170,7 @@ i:active:not(.uil-search) {
 
 
 
-.uil {
+a,.uil{
     transform: scale(1.5, 1.5);
+    color: #333333;
 }
