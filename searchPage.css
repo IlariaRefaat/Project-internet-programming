@@ -118,7 +118,7 @@ nav .container {
 
 }
 
-nav .search-bar {
+/* nav .search-bar {
     background-color: var(--color-white);
     border: 0.3px solid lightgray;
     padding: var(--search-padding);
@@ -131,11 +131,12 @@ nav .search-bar input[type="search"] {
     font-size: 00.9rem;
     color: var(--color-dark);
 
-}
+} */
 
-nav .search-bar input[type="search"]::placeholder {
+/* nav .search-bar input[type="search"]::placeholder {
     color: darkgray;
-}
+} */
+
 
 nav .add-question {
     display: flex;
