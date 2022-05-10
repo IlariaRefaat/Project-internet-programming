@@ -80,9 +80,9 @@ img {
     background-color: var(--color-white);
     color: #333333;
     border: 2px solid lightgray;
-    width: 8vw;
+
     font-size: small;
-    text-align: center;
+
 
 
 }
@@ -171,17 +171,33 @@ i:active:not(.uil-search) {
 
 
 
+
 a,
 .uil {
     transform: scale(1.5, 1.5);
     color: #333333;
 }
 
+
+
+@media screen and (max-width:800px) {
+
+    .uil,
+    .btn-secondary {
+        display: none;
+    }
+
+
+
+
+}
+
+
 .search-container {
     margin: 0 auto;
     text-align: center;
-    
-   
+
+
 
 }
 
@@ -192,7 +208,7 @@ a,
 }
 
 .searchBar {
-   width: 50%;
+    width: 50%;
     border: var(--color-dark) solid 2px;
     border-radius: var(--border-radius);
     text-align: center;
@@ -208,13 +224,15 @@ a,
     padding-left: 15px;
     font-size: larger;
 }
-.searchBar i{
+
+.searchBar i {
     align-self: center;
     color: var(--color-primary);
-    
+
 
 }
+
 .searchBar input[type=text]::placeholder {
     color: darkgray;
-    
+
 }
