@@ -30,6 +30,6 @@ To run this project,
 
 
 ## Note
-Use the report to guide you through The webpages
+Use the Report to guide you through The webpages
 
 
