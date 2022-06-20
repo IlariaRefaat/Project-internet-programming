@@ -16,7 +16,10 @@ searchInput.onkeyup = (e) => {
   showSearchResult(emptyArray);
   let allList = searchResult.querySelectorAll("li");
   for (let i = 0; i < allList.length; i++) {
-    allList[i].setAttribute("onclick", "select(this)");
+    if (!emptyArray.length) {
+    } else {
+      allList[i].setAttribute("onclick", "select(this)");
+    }
   }
 };
 function showSearchResult(list) {
