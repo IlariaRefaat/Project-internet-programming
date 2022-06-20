@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="registeration.css">
+    <link rel="icon" href="img/1200px-Quora_icon.svg.png">
+    <title>Quora</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <hr>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input id="name" type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input id="userName" type="text" onblur="validateUserName()" placeholder="Enter your username" required>
+            <div class="warning-input" id="warningUserName">
+              Sorry, that username is taken.
+          </div>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input id="email" type="text" onblur="validateEmail()" placeholder="Enter your email" required>
+            <div class="warning-input" id="warningEmail">
+              Please enter a valid email and make sure it is not already in use
+          </div>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input id="number" type="text" onblur="validateNumber()" placeholder="Enter your number" required>
+            <div class="warning-input" id="warningNumber">
+              You have entered an invalid phone number.
+          </div>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input id="password" type="password" onblur="validatePassword()" placeholder="Enter your password" required>
+            <div class="warning-input" id="warningPassword">
+              Your password must contain between 4 and 60 characters.
+          </div>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input id="confirmPassword" type="password" onblur="validateConfirmPassword()" placeholder="Confirm your password" required>
+            <div class="warning-input" id="warningConfirmPassword">
+              The password confirmation does not match. 
+          </div>
+          </div>
+        </div>
+        <div class="new-members">
+          Already have an account? <a href="Login.html" class="signup-link">Login from here.</a>
+      </div>
+        <div class="button">
+          <input id="signUpButton" type="submit" value="Sign up" onclick="signUp()">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./Register_Login.js"></script>
+  <script src="./Users.js"></script>
+</body>
+</html>
