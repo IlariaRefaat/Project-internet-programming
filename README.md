@@ -1,4 +1,4 @@
-# Project-internet-programming
+# Project-Internet-Programming
 Questions and Answers website
 
 ## Table of Contents
