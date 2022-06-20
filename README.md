@@ -30,6 +30,6 @@ To run this project,
 
 
 ## Note
-Use the Report to guide you through The webpages
+Use the [Report](https://github.com/IlariaRefaat/Project-internet-programming/) to guide you through The webpages
 
 
