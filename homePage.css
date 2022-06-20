@@ -265,6 +265,10 @@ main .container {
 .left-side a:hover {
     background: lightgray;
 }
+.left-side .menu-active {
+    background: lightgray;
+}
+
 
 /*.left-side .picture{
     font-size: 1.4 rem;
@@ -300,7 +304,7 @@ main .container {
     height: 35px;
     padding-left: 0.5rem;
     background: var(--color-gray);
-    color: lightgray;
+    color: black;
     margin-right: 1rem;
     border-radius: 2rem;
     border: solid;

@@ -11,7 +11,7 @@
     <!----stylesheet-->
     <link rel="stylesheet" href="./homePage.css" />
   </head>
-  <body>
+  <body onload="load_posts()">
     <!----------NAV------------>
     <nav>
       <div class="container">
@@ -51,25 +51,25 @@
        <!----left-side----------->
        <div class="left-side">
           <div class="topic-links">
-           <a href="#"><img class="picture"src="images/general.jpg" >
+           <a href="#" class="menu]" onclick='menuFun(0)' id="menu0" ><img class="picture"src="images/general.jpg" >
             <h3>General</h3>
           </a>
-            <a href="#"><img class="picture" src="images/projects.jpg" > <h3>Projects</h3> 
+            <a href="#" class="menu" onclick='menuFun(1)'id="menu1" ><img class="picture" src="images/projects.jpg" > <h3>Projects</h3> 
              
             </a>
-            <a href="#"><img class="picture" src="images/cess.jpg" >
+            <a href="#" class="menu" onclick='menuFun(2)' id="menu2"><img class="picture" src="images/cess.jpg" >
               <h3>Computer</h3>
             </a>
-            <a href="#"><img class="picture" src="images/mecha.jpg" >
+            <a href="#" class="menu" onclick='menuFun(3)'id="menu3" ><img class="picture" src="images/mecha.jpg" >
               <h3>Mechatronics</h3>
             </a>
-            <a href="#"><img class="picture" src="images/energy.jpg" >
+            <a href="#" class="menu" onclick='menuFun(4)'id="menu4" ><img class="picture" src="images/energy.jpg" >
               <h3>Energy</h3>
             </a>
-           <a href="#"><img class="picture" src="images/arch.jpg" >
+           <a href="#" class="menu" onclick='menuFun(5)'id="menu5" ><img class="picture" src="images/arch.jpg" >
             <h3>Architecture</h3>
           </a>
-           <a href="#"><img class="picture" src="images/comm.jpg" >
+           <a href="#" class="menu" onclick='menuFun(6)' id="menu6"><img class="picture" src="images/comm.jpg" >
             <h3>Communications</h3>
           </a>
          </div>
@@ -87,139 +87,12 @@
             <i class="uil uil-user profile-page"></i>
            </div>
            <input type="text" placeholder="What do you want to ask or share?" id="create-post">
-           <input type="submit" value="Post" class="btn btn-primary">
+           <input type="submit" value="Post" class="btn btn-primary" onclick='add_post()'>
          </form>
          <!--------------------feed------------------------------------>
          <div class="feeds">
-           <!-------------------feed1--------------------------------->
-           <div class="feed">
-             <div class="head">
-               <div class="user">
-                <div class="profile-picture">
-                  <img src="images/profile1.jpg">
-                </div>
-                <div class="ingo">
-                  <h3>Lana Del Rey</h3>
-                  <small>CESS, 15 MINUTES AGO</small>
-                </div>
-               </div>
-               <span class="edit">
-                <i class="uil uil-ellipsis-h"></i>
-              </span>
-             </div>
-             <div class="photo">
-               <img src="images/feed1.jpg">
-             </div>
-             <div class="action-button">
-               <div class="interaction-buttons">
-                 <span><i class="uil uil-heart"></i></span>
-                 <span><i class="uil uil-comment-dots"></i></span>
-                 <span><i class="uil uil-share-alt"></i></span>
-               </div>
-             </div>
-             <div class="liked-by">
-               <span><img src="images/profile4.jpg"></span>
-               <span><img src="images/profile3.jpg"></span>
-               <span><img src="images/profile2.jpg"></span>
-               <p>Liked by <b>Laila Mohamed</b> and <b>500 others</b></p>
-             </div>
-             <div class="caption">
-               <p>
-                 <b>Lana Del Rey</b>
-                 Can someone please help me out with this code. I can not catch the error.
-               </p>
-             </div>
-             <div class="text-muted">
-               View all 50 comments
-             </div>
-           </div>
-
-         <!-------------------feed2--------------------------------->
-         <div class="feed">
-          <div class="head">
-            <div class="user">
-             <div class="profile-picture">
-               <img src="images/profile4.jpg">
-             </div>
-             <div class="ingo">
-               <h3>Dr Hamid</h3>
-               <small>Assistant Prof, 30 MINUTES AGO</small>
-             </div>
-            </div>
-            <span class="edit">
-             <i class="uil uil-ellipsis-h"></i>
-           </span>
-          </div>
-          <div class="photo">
-            <img src="images/feed2.jpg">
-          </div>
-          <div class="action-button">
-            <div class="interaction-buttons">
-              <span><i class="uil uil-heart"></i></span>
-              <span><i class="uil uil-comment-dots"></i></span>
-              <span><i class="uil uil-share-alt"></i></span>
-            </div>
-          </div>
-          <div class="liked-by">
-            <span><img src="images/profile5.jpg"></span>
-            <span><img src="images/profile3.jpg"></span>
-            <span><img src="images/profile2.jpg"></span>
-            <p>Liked by <b>Ilaria Refaat</b> and <b>200 others</b></p>
-          </div>
-          <div class="caption">
-            <p>
-              <b>Dr Hamid</b>
-              Congratulations Class 2022!! You made us all proud!
-            </p>
-          </div>
-          <div class="text-muted">
-            View all 33 comments
-          </div>
-        </div>
-      <!-------------------feed3--------------------------------->
-      <div class="feed">
-        <div class="head">
-          <div class="user">
-           <div class="profile-picture">
-             <img src="images/profile2.jpg">
-           </div>
-           <div class="ingo">
-             <h3>Rose Ryan</h3>
-             <small>CESS, 15 MINUTES AGO</small>
-           </div>
-          </div>
-          <span class="edit">
-           <i class="uil uil-ellipsis-h"></i>
-         </span>
-        </div>
-        <div class="photo">
-          <img src="images/feed3.jpg">
-        </div>
-        <div class="action-button">
-          <div class="interaction-buttons">
-            <span><i class="uil uil-heart"></i></span>
-            <span><i class="uil uil-comment-dots"></i></span>
-            <span><i class="uil uil-share-alt"></i></span>
-          </div>
-        </div>
-        <div class="liked-by">
-          <span><img src="images/profile4.jpg"></span>
-          <span><img src="images/profile1.jpg"></span>
-          <span><img src="images/profile3.jpg"></span>
-          <p>Liked by <b>Yomna Hussein</b> and <b>1333 others</b></p>
-        </div>
-        <div class="caption">
-          <p>
-            <b>Rose Ryan</b>
-            Good luck in your exams fellow colleagues!
-          </p>
-        </div>
-        <div class="text-muted">
-          View all 122 comments
-        </div>
-      </div>
-    </div>
-  </div>
+        </div>  
+    </div> 
 
        <!----right-side----------->
        <div class="right-side">
@@ -234,5 +107,6 @@
        </div>
      </div>
   </main>
+  <script src="homePage.js"></script>
   </body>
 </html>
