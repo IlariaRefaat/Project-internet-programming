@@ -26,7 +26,7 @@ function showSearchResult(list) {
   let listData;
   if (!list.length) {
     userValue = searchInput.value;
-    listData = "<li>" + userValue + "</li>";
+    listData = "<li>" + " " + "</li>";
   } else {
     listData = list.join("");
   }
