@@ -24,7 +24,7 @@ Project is created with:
 ## Setup
 To run this project, 
 - Download project from github
-- Upload project To any compiler that is able to run these * [Technologies](#technologies)
+- Upload project To any compiler that is able to run these [Technologies](#technologies)
 - Run any of the Webpages on your browser
 - navigate through pages through the buttons embedded in the pages.
 
