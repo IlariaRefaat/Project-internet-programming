@@ -543,11 +543,8 @@ h6 {
     display:flex;
     justify-content: space-between;
 }
-.Photos-Likes{
-    padding-top: 10px; 
-    min-height: 50px; 
-    display:flex;
-}
+
+
 .Photos-Likes img{
     border-radius:50%; 
     width: 30px; height:30px; 
@@ -563,6 +560,14 @@ h6 {
             position: relative; 
             border-radius:50% ;
 }
+
+.profile-picture img{
+     
+    width: 37px; 
+    height: 40px; 
+    border-radius:50% ;
+
+ }
 .Name span{
     font-size: 200%; 
     font-weight: bold;  
@@ -615,5 +620,42 @@ h6 {
   /* Hide the link that should open and close the topnav on small screens */
   .options .icon {
     display: none;
+  }
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 600px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  .form-container .cancel {
+    background-color: #aa2200;
+  }
+  .form-container .btn {
+    background-color: #aa2200;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
   }
 
