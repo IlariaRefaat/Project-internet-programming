@@ -183,6 +183,7 @@ function add_post(){
     let input=document.getElementById("create-post").value;
     newPost = new post('images/profile1.jpg', "Yomna", "CESS", 'just now', '500','50','', input);
     PostArray.unshift(newPost);
+    document.getElementById("create-post").value="";
     let container=document.getElementsByClassName("feeds")[0];
     container.innerHTML="";
         var div1=document.createElement("div");
@@ -273,6 +274,7 @@ function add_post(){
         div1.appendChild(div11);
         container.appendChild(div1);
         load_posts();
+        input.value='';
 }
 
   
